@@ -35,7 +35,7 @@ class MyButton: MyInterfaceListener, MySecondInterface {
 
     override fun onTouch() {
         super<MyInterfaceListener>.onClick()
-        //super<MySecondInterface>.onClick()
+        super<MySecondInterface>.onClick()
     }
 
     override fun onClick() {
