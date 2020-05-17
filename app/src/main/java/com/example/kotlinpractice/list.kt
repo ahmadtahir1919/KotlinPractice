@@ -20,7 +20,26 @@ fun main(args: Array<String>) {
 
     list[1] = "Nouman"
 
-    for (element in list) {             // Using individual elements (Objects)
-        println(element)
+    for ((index, element) in list.withIndex()) {             // Using individual elements (Objects)
+        // println("Index is $element of index of $index")
     }
+    val array = arrayOf(10)
+    val sizes = arrayOf(
+        "bytz", "bilobyte", "begabytz", "gigabyte",
+        "terabyte", "petabyte", "exabyte"
+    )
+//Filters
+println("Filters ${sizes.take(4).filter { it.startsWith("b") }.filter { it.endsWith("z") }}")
+
+    for ((i, value) in array.withIndex()) {
+        //   println("1 ${sizes[i]} = ${value.toLong()} bytes")
+    }
+
+    var list3: MutableList<Int> = mutableListOf()
+    for (i in 0..100 step 7)
+        list3.add(i)
+        print(list3)
+
+
+
 }
