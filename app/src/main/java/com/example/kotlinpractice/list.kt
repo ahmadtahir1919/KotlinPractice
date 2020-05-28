@@ -14,7 +14,8 @@ fun main(args: Array<String>) {
     list.add("Ahmad")        // 0
     list.add("Tahir")    // 1
     list.add("Ali")    // 2
-
+    //For printing Array
+    list.forEach {  println(it.toUpperCase()) }
 //    list.remove("Manmohan")
 //    list.add("Vajpayee")
 
@@ -29,7 +30,7 @@ fun main(args: Array<String>) {
         "terabyte", "petabyte", "exabyte"
     )
 //Filters
-println("Filters ${sizes.take(4).filter { it.startsWith("b") }.filter { it.endsWith("z") }}")
+    println("Filters ${sizes.take(4).filter { it.startsWith("b") }.filter { it.endsWith("z") }}")
 
     for ((i, value) in array.withIndex()) {
         //   println("1 ${sizes[i]} = ${value.toLong()} bytes")
@@ -38,8 +39,7 @@ println("Filters ${sizes.take(4).filter { it.startsWith("b") }.filter { it.endsW
     var list3: MutableList<Int> = mutableListOf()
     for (i in 0..100 step 7)
         list3.add(i)
-        print(list3)
-
+    print(list3)
 
 
 }

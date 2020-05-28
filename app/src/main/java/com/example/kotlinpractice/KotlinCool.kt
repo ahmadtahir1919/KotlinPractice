@@ -9,6 +9,8 @@ fun main(args: Array<String>) {
         "bytz", "bilobyte", "begabytz", "gigabyte",
         "terabyte", "petabyte", "exabyte"
     )
+    //Love this one instead of loop
+    sizes.forEach ({println(it) })
 //Filters
     println("Filters ${sizes.take(4).filter { it.startsWith("b") }.filter { it.endsWith("z") }}")
 ///////////////
